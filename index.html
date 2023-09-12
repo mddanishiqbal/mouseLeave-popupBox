@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse leave Popup - Md. Danish Iqbal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container"></div>
+    <div id="modelBox">
+        <img src="./assets/pop-up.jpg" width="100%" alt="">
+        <div class="offer_text">
+            <h2>Get 25% OFF</h2>
+            <small>on all beauty products</small>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum porro perferendis libero
+                debitis deserunt sapiente ipsum distinctio.
+            </p>
+            <form action="">
+                <input type="email" placeholder="Email Address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <img src="./assets/close.png" class="close_icon" alt="" onclick="closePopup()">
+    </div>
+
+    <script>
+        let modelBox = document.getElementById("modelBox");
+        document.onmouseleave = function () {
+            modelBox.style.display = "block";
+        }
+
+        function closePopup() {
+            modelBox.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
